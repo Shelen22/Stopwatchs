@@ -3,18 +3,18 @@ import React from "react";
 
 export default function ControlButtons(props) {
 const StartButton = (
-	<div className="btn btn-one btn-start"
+	<div
 		onClick={props.handleStart}>
 	Start
 	</div>
 );
 const ActiveButtons = (
-	<div className="btn-grp">
-	<div className="btn btn-two"
+	<div>
+	<div 
 		onClick={props.handleReset}>
 		Reset
 	</div>
-	<div className="btn btn-one"
+	<div
 		onClick={props.handlePauseResume}>
 		{props.isPaused ? "Resume" : "Pause"}
 	</div>
@@ -22,7 +22,7 @@ const ActiveButtons = (
 );
 
 return (
-	<div className="Control-Buttons">
+	<div>
 	<div>{props.active ? ActiveButtons : StartButton}</div>
 	</div>
 );
